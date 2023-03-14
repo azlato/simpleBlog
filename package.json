@@ -31,7 +31,8 @@
       "airbnb-typescript"
     ],
     "parserOptions": {
-      "project": "./tsconfig.json"
+      "project": "./tsconfig.json",
+      "ecmaVersion": 2015
     },
     "rules": {
       "import/no-extraneous-dependencies": [

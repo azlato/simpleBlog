@@ -1,8 +1,13 @@
 import React from 'react';
+import { PostsProvider } from '../../providers/posts/PostsProvider';
+import PostList from '../../components/postList/PostList';
 
 function Home() {
   return (
-    <div>Home</div>
+    <PostsProvider>
+      <div>Home</div>
+      <PostList />
+    </PostsProvider>
   );
 }
 
