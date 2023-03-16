@@ -15,9 +15,11 @@ const PostTitle = styled.h1`
 `;
 
 const PostDescription = styled.p`
-  color: ${styleVariables.colors.gray400};
+  color: ${styleVariables.colors.gray600};
 
   ${({ isTruncated }: { isTruncated?: boolean }) => isTruncated && `
+    color: ${styleVariables.colors.gray400};
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -15,7 +15,11 @@ const UserLink = styled(Link)`
   }
 `;
 
-function Username({ user }: { user: IUser }) {
+interface IProps {
+  user: IUser;
+}
+
+function Username({ user }: IProps) {
   return (
     <UserLink to={`/user/${user.id}`}>{user.username}</UserLink>
   );
