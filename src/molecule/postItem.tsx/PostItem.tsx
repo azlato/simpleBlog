@@ -6,7 +6,7 @@ import { IPost } from '../../organism/postList/post.type';
 import styleVariables from '../../styleVariables';
 
 const PostContainer = styled.div`
-  margin: 36px 0;
+  margin: 0 0 36px 0;
 `;
 
 const PostTitle = styled.h1`
