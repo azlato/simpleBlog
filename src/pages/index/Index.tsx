@@ -1,10 +1,10 @@
 import React from 'react';
 import PostList from '../../organism/postList/PostList';
 
-function Index() {
+function IndexPage() {
   return (
     <PostList />
   );
 }
 
-export default Index;
+export default IndexPage;

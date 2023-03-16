@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Username from '../../atom/username/Username';
 import { IPost } from '../../organism/postList/post.type';
 import styleVariables from '../../styleVariables';
 
-const PostCard = styled.div`
+const PostContainer = styled.div`
   margin: 36px 0;
 `;
 
@@ -23,11 +24,6 @@ const PostDescription = styled.p`
   `}
 `;
 
-const Username = styled.div`
-  font-size: 14px;
-  margin-bottom: 2px;
-`;
-
 const PostLink = styled(Link)`
   color: ${styleVariables.colors.black};
 
@@ -44,13 +40,13 @@ interface IProps {
 
 function PostItem({ item, isTruncated }: IProps) {
   return (
-    <PostCard>
-      <Username>{item.user?.username}</Username>
+    <PostContainer>
+      {item.user && <Username user={item.user} />}
       <PostLink to={`/post/${item.id}`}>
         <PostTitle>{item.title}</PostTitle>
       </PostLink>
       <PostDescription isTruncated={isTruncated}>{item.body}</PostDescription>
-    </PostCard>
+    </PostContainer>
   );
 }
 

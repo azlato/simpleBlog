@@ -1,10 +1,10 @@
 import React from 'react';
 import PostDetail from '../../organism/postDetail/PostDetail';
 
-function Post() {
+function PostPage() {
   return (
     <PostDetail />
   );
 }
 
-export default Post;
+export default PostPage;

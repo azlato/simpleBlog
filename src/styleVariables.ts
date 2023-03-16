@@ -6,6 +6,8 @@ export default {
     gray200: '#eee',
     gray300: '#ccc',
     gray400: '#aaa',
+    gray500: '#888',
+    gray600: '#666',
   },
   fontWeight: {
     bold: 'bold',

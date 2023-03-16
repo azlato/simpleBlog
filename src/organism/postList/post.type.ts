@@ -1,7 +1,4 @@
-export interface IUser {
-  id: number;
-  username: string;
-}
+import { IUser } from '../userDetail/user.type';
 
 export interface IPost {
   id: number;
