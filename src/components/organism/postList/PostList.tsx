@@ -4,14 +4,15 @@ import { IPost } from './post.type';
 import useData from '../../../hooks/useData';
 
 function PostList() {
-  const data = useData<IPost[]>(
+  const [data, fetchError] = useData<IPost[]>(
     'https://jsonplaceholder.typicode.com/posts/',
     { parentIdKey: 'userId', parentResultKey: 'user', dataUrl: 'https://jsonplaceholder.typicode.com/users/' },
   );
-  console.log('post list', data);
 
   return (
     <div>
+      {fetchError && <div>{fetchError}</div>}
+
       {data?.map((item) => (
         <PostItem key={item.id} item={item} />
       ))}

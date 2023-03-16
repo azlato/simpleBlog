@@ -7,7 +7,7 @@ import { IComment } from './comment.type';
 
 function PostDetail() {
   const { postId } = useParams();
-  const post = useData<IPost>(
+  const [post] = useData<IPost>(
     `https://jsonplaceholder.typicode.com/posts/${postId}`,
   );
   useData<IComment[]>(
