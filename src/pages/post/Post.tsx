@@ -1,5 +1,5 @@
 import React from 'react';
-import PostDetail from '../../components/organism/postDetail/PostDetail';
+import PostDetail from '../../organism/postDetail/PostDetail';
 
 function Post() {
   return (
