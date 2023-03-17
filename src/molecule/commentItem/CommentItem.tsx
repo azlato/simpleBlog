@@ -4,7 +4,21 @@ import { IComment } from '../../organism/postDetail/comment.type';
 import styleVariables from '../../styleVariables';
 
 const CommentContainer = styled.div`
+  position: relative;
   margin: 0 0 40px 0;
+  padding-left: 6px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:before {
+    position: absolute;
+    left: -6px;
+
+    content: '"';
+    color: ${styleVariables.colors.gray300};
+  }
 `;
 
 const Username = styled.div`

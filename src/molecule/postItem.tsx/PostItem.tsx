@@ -7,6 +7,10 @@ import styleVariables from '../../styleVariables';
 
 const PostContainer = styled.div`
   margin: 0 0 36px 0;
+
+  &:last-child {
+    margin: 0;
+  }
 `;
 
 const PostTitle = styled.h1`

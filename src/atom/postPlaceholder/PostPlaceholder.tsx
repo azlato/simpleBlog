@@ -5,10 +5,14 @@ import styleVariables from '../../styleVariables';
 const Container = styled.div`
   margin: 0 0 36px 0;
   width: 100%;
+
+  &:last-child {
+    margin: 0;
+  }
 `;
 
 const Line = styled.div`
-  margin: 14px 0px;
+  margin: 15px 0px;
   height: 10px;
 
   background-color: ${styleVariables.colors.gray200};
