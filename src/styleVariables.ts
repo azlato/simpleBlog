@@ -18,4 +18,7 @@ export default {
     tablet: '(min-width: 768px)',
     desktop: '(min-width: 1024px)',
   },
+  variables: {
+    navbarHeight: 60,
+  },
 };

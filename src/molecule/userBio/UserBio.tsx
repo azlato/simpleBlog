@@ -20,7 +20,7 @@ const ContactLink = styled.a`
     color: ${styleVariables.colors.gray600};
 
     &:focus, &:hover {
-    color: ${styleVariables.colors.black};
+        color: ${styleVariables.colors.black};
     }
 `;
 
