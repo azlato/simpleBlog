@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Demo app: Simple blog
+- Written with React functional components
+- Fetch and display list of posts, post detail and user detail
+- Atomic Design Methodology (atom, molecule, organism, templates, pages) where organism state is holding data
+- Styled components
+- Custom hook `useData` for fetching resource from url with optional fetching one level of reference data
+- React router with List, PostDetail and UserDetail pages
+
+## Used technology
+- React.js
+- TypeScript
+- CreateReactApp script with TypeScript template
+- StyledComponents
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

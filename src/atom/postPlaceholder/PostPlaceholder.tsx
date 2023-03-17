@@ -33,7 +33,7 @@ const Line = styled.div`
 
 function PostPlaceholder() {
   return (
-    <Container>
+    <Container data-testid="placeholder">
       <Line />
       <Line />
       <Line />
